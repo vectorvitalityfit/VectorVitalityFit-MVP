@@ -10,7 +10,7 @@ def deploy_model():
     credential=DefaultAzureCredential()
     ml_client=MLClient(credential, subscription_id, resource_group, workspace_name)
 
-    model=Model(path="model.py", name="muscle-growth-model", description="Muscle growth prediction model")
+    model=Model(path="score.py", name="muscle-growth-model", description="Muscle growth prediction model")
     ml_client.models.create_or_update(model)
 
     endpoint=ManagedOnlineEndpoint(name="musclegrowth-endpoint")

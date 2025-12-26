@@ -1,0 +1,149 @@
+{
+  "intents": [
+    {
+      "intent": "WhatIsBFR",
+      "utterances": [
+        "What is blood flow restriction training?",
+        "Explain BFR training.",
+        "Can you tell me about blood flow restriction?",
+        "How does BFR work?",
+        "What does BFR mean?",
+        "Give me an overview of Blood Flow Restriction training.",
+        "What exactly is BFR?",
+        "Why do people use blood flow restriction in workouts?",
+        "What happens during BFR training?"
+      ]
+    },
+    {
+      "intent": "IsBFRsafe",
+      "utterances": [
+        "Is BFR training safe?",
+        "Can I do BFR safely?",
+        "Are there risks with blood flow restriction training?",
+        "Is it dangerous to do BFR?",
+        "What are the safety concerns with BFR?",
+        "Is BFR suitable for beginners?",
+        "Do I need to be careful with BFR?",
+        "Can BFR cause injury?",
+        "Should I consult a doctor before starting BFR?"
+      ]
+    },
+    {
+      "intent": "HowLongBFR",
+      "utterances": [
+        "How long should I restrict blood flow?",
+        "What is the ideal duration for BFR sets?",
+        "How many seconds should I do BFR for?",
+        "How long do I keep the cuffs on during exercise?",
+        "What’s the recommended rest time between BFR sets?",
+        "How frequently can I do BFR training weekly?",
+        "How long is a typical BFR workout session?",
+        "Can I do BFR every day?",
+        "Is there a limit to how long I should do BFR?"
+      ]
+    },
+    {
+      "intent": "BFRPrecautions",
+      "utterances": [
+        "What precautions should I take for BFR?",
+        "Safety tips for BFR training?",
+        "How do I avoid injury with blood flow restriction?",
+        "What should I watch out for during BFR?",
+        "Are there any risks or side effects of BFR?",
+        "How do I ensure safe cuff pressure?",
+        "When should I stop BFR during a workout?",
+        "Can BFR cause numbness or pain?",
+        "What are the signs that BFR isn’t safe for me?"
+      ]
+    },
+    {
+      "intent": "BFRBenefits",
+      "utterances": [
+        "What are the benefits of BFR training?",
+        "How does BFR help muscle growth?",
+        "Why should I try blood flow restriction?",
+        "Can BFR improve strength?",
+        "Does BFR help with injury recovery?",
+        "What advantages does BFR have over regular training?",
+        "How does BFR affect endurance?",
+        "Is BFR effective for all fitness levels?",
+        "Can BFR reduce joint stress?"
+      ]
+    },
+    {
+      "intent": "BFREquipment",
+      "utterances": [
+        "What equipment do I need for BFR?",
+        "Do I need special cuffs for BFR?",
+        "How tight should BFR bands be?",
+        "Are elastic bands good for BFR?",
+        "Can I use regular resistance bands for BFR?",
+        "What’s the best way to apply BFR cuffs?",
+        "Where do I place the cuffs?",
+        "Do I need a device to measure pressure?",
+        "Can I do BFR without equipment?"
+      ]
+    },
+    {
+      "intent": "BFRWorkoutTips",
+      "utterances": [
+        "Any tips for starting BFR training?",
+        "How do I incorporate BFR into my routine?",
+        "What’s a good beginner BFR workout?",
+        "How do I pace myself with BFR?",
+        "Should I warm up before BFR?",
+        "How do I make progress with BFR?",
+        "Can I combine BFR with other training?",
+        "What are common mistakes in BFR training?",
+        "How do I track my BFR progress?"
+      ]
+    },
+    {
+      "intent": "BFRTroubleshooting",
+      "utterances": [
+        "Why do my limbs feel numb during BFR?",
+        "Is it normal to feel tingling with BFR?",
+        "What if I feel pain during BFR?",
+        "My cuff feels too tight, what should I do?",
+        "Why am I getting bruises from BFR?",
+        "How do I fix discomfort with BFR bands?",
+        "What to do if BFR causes dizziness?",
+        "Can BFR cause swelling?",
+        "Is it normal to feel fatigued quickly with BFR?"
+      ]
+    },
+    {
+      "intent": "GeneralGreetings",
+      "utterances": [
+        "Hi",
+        "Hello",
+        "Hey there",
+        "Good morning",
+        "Good afternoon",
+        "What's up?",
+        "How are you?"
+      ]
+    },
+    {
+      "intent": "GeneralThanks",
+      "utterances": [
+        "Thanks",
+        "Thank you",
+        "Thanks for your help",
+        "Appreciate it",
+        "Thanks a lot"
+      ]
+    },
+    {
+      "intent": "GeneralFallback",
+      "utterances": [
+        "I don't understand",
+        "Can you repeat that?",
+        "What do you mean?",
+        "I have a question",
+        "Help",
+        "I need assistance"
+      ]
+    }
+  ]
+}
