@@ -1,0 +1,6 @@
+name: muscle-growth-env
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+      - numpy
