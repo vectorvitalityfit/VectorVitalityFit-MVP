@@ -8,12 +8,6 @@ def deploy_model():
     resource_group = "VVF-Resources"
     workspace = "VVF-Workspace"
 
-    credential = ClientSecretCredential(
-        tenant_id=tenant_id,
-        client_id=client_id,
-        client_secret=client_secret
-    )
-
     ml_client = MLClient(
         credential=credential,
         subscription_id=subscription_id,
