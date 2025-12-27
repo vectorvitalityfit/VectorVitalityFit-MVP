@@ -27,5 +27,30 @@ def run_cmd(cmd):
 
 def main():
     try:
-        #set subscription
-        run_cmd(f"az account set --subscription {subscription_id}") 
+        # Set the active subscription
+        run_cmd(f"az account set --subscription {subscription_id}")
+
+        # Create resource group (idempotent)
+        run_cmd(f"az group create --name {resource_group} --location {location}")
+
+        # Create Azure ML workspace (idempotent)
+        run_cmd(f"az ml workspace create --name {workspace} --resource-group {resource_group} --location {location}")
+
+        # Delete existing endpoint if it exists (ignore errors)
+        try:
+            run_cmd(f"az ml online-endpoint delete --name {endpoint_name} --resource-group {resource_group} --workspace-name {workspace} --yes")
+            print("Waiting 10 seconds for deletion to propagate...")
+            time.sleep(10)
+        except Exception as e:
+            print(f"Warning: {e}")
+
+        # Create a new online endpoint
+        run_cmd(f"az ml online-endpoint create --name {endpoint_name} --resource-group {resource_group} --workspace-name {workspace} --auth-mode key")
+
+        print(f"Endpoint '{endpoint_name}' created successfully.")
+
+    except Exception as e:
+        print(f"Deployment failed: {e}")
+
+if __name__ == "__main__":
+    main()
