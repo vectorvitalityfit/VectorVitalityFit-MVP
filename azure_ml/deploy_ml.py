@@ -23,7 +23,7 @@ def deploy_model():
     env = ml_client.environments.create_or_update(env)
 
     # Create or update endpoint
-    endpoint = ManagedOnlineEndpoint(name="musclegrowth-endpoint")
+    endpoint = ManagedOnlineEndpoint(name="musclegrowth-endpoint", auth_mode="key")
     ml_client.online_endpoints.begin_create_or_update(endpoint).result()
 
     # Define code configuration (path to your code and scoring script)
